@@ -6,7 +6,7 @@
   <groupId>devpro</groupId>
   <artifactId>hello-world</artifactId>
   <packaging>jar</packaging>
-  <version>1.0-SNAPSHOT</version>
+  <version>1.0</version>
   <name>hello-world</name>
 
   <build>
@@ -20,7 +20,7 @@
     <dependency>
       <groupId>junit</groupId>
       <artifactId>junit</artifactId>
-      <version>3.8.1</version>
+      <version>4.11</version>
       <scope>test</scope>
     </dependency>
   </dependencies>
