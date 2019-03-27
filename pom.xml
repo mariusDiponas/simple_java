@@ -14,6 +14,23 @@
     <outputDirectory>${basedir}/build/classes</outputDirectory>
     <testSourceDirectory>${project.basedir}/test</testSourceDirectory>
     <testOutputDirectory>${project.basedir}/test/classes</testOutputDirectory>
+
+	<plugins>
+		<plugin>
+			<groupId>org.apache.maven.plugins</groupId>
+			<artifactId>maven-jar-plugin</artifactId>
+			<version>3.1.0</version>
+			<configuration>
+				<outputDirectory>${basedir}/build/jar</outputDirectory>
+				<archive>
+					<manifest>
+						<addClasspath>true</addClasspath>
+						<mainClass>hello</mainClass>
+					</manifest>
+				</archive>
+			</configuration>
+		</plugin>
+	</plugins>
   </build>
 
   <dependencies>
